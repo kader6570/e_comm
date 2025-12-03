@@ -4,7 +4,7 @@ import axios from "axios";
 
 // ✅ Configuration de base avec variable d'environnement
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'https://api-multi-tenant-production.up.railway.app/',
+    baseURL: import.meta.env.VITE_API_URL || 'https://api-multi-tenant-production.up.railway.app/api',
     timeout: 10000, // ✅ CORRIGÉ : 10s au lieu de 1s (pour les images)
     headers: {
         'Content-Type': 'application/json',
