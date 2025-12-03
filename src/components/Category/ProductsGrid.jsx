@@ -1,0 +1,48 @@
+// src/pages/CategoryPage/ProductsGrid.jsx
+
+import React from 'react';
+import ProductCard from '../ProductCard';
+import LoadingSkeleton from './LoadingSkeleton';
+import { LOADING_SKELETON_COUNT } from './constants';
+
+const ProductsGrid = ({ articles, loading }) => {
+    if (loading) {
+        return (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {Array.from({ length: LOADING_SKELETON_COUNT }).map((_, i) => (
+                    <LoadingSkeleton key={i} />
+                ))}
+            </div>
+        );
+    }
+
+    if (articles.length === 0) {
+        return (
+            <div className="col-span-full flex flex-col items-center justify-center 
+                          py-20 px-4 bg-white rounded-2xl border-4 border-dashed 
+                          border-gray-200">
+                <svg className="w-20 h-20 text-gray-300 mb-4" fill="none" 
+                     stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
+                          d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                </svg>
+                <p className="text-xl font-bold text-gray-600 mb-2">
+                    Aucun produit disponible
+                </p>
+                <p className="text-gray-400">
+                    Essayez de modifier vos critères de recherche
+                </p>
+            </div>
+        );
+    }
+
+    return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {articles.map((article) => (
+                <ProductCard key={article.id} article={article} />
+            ))}
+        </div>
+    );
+};
+
+export default ProductsGrid;
