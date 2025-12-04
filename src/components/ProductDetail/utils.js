@@ -16,7 +16,7 @@ export const getImageThumbnails = (article) => {
  */
 export const getProductMetadata = (article) => {
     const marqueNom = article.marque?.nom_marque || 'N/A';
-    const categorieNom = article.marque?.categories_details?.[0]?.categorie?.nom || 'N/A';
+    const categorieNom = article.category.nom|| 'N/A';
     
     return { marqueNom, categorieNom };
 };
@@ -28,7 +28,7 @@ export const getProductSpecs = (article, marqueNom, categorieNom) => {
     return [
         { label: "Marque", value: marqueNom, color: "green" },
         { label: "Catégorie", value: categorieNom, color: "blue" },
-        { label: "RAM", value: `${article.stockage || 'N/A'} Go`, color: "indigo" },
+        { label: "RAM", value: `${article.stokcage || 'N/A'} Go`, color: "indigo" },
         { label: "Stockage", value: `${article.ram || 'N/A'} Go`, color: "purple" },
     ];
 };
