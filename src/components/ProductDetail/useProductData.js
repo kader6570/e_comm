@@ -19,7 +19,7 @@ export const useProductData = (productId) => {
                 const response = await api.get(`articles/${productId}/`);
                 const data = response.data;
                 setArticle(data);
-                setMainImage(data.image);
+                setMainImage(data.image_thumbnail);
             } catch (error) {
                 console.error("Erreur lors de la récupération de l'article:", error);
                 setError(error.response?.status === 404 
