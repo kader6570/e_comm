@@ -5,9 +5,9 @@
  */
 export const getImageThumbnails = (article) => {
     return [
-        article.image,
-        article.image1,
-        article.image2,
+        article.image_thumbnail,
+        article.image1_thumbnail,
+        article.image2_thumbnail,
     ].filter(url => url);
 };
 
