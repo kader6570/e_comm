@@ -109,13 +109,13 @@ const ContactPage = () => {
                         <li className="flex items-start">
                             <svg className="w-5 h-5 mr-3 mt-1 text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                             <span>
-                                **Horaires de réponse :** Notre équipe est disponible sur WhatsApp de 9h00 à 18h00, du lundi au vendredi.
+                                **Horaires de réponse :** Notre équipe est disponible sur WhatsApp de 7h00 à 20h00, du lundi au lundi.
                             </span>
                         </li>
                         <li className="flex items-start">
                             <svg className="w-5 h-5 mr-3 mt-1 text-indigo-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                             <span>
-                                **E-mail de support :** Pour les demandes formelles, veuillez nous contacter à **support@votreboutique.com**.
+                                **E-mail de support :** Pour les demandes formelles, veuillez nous contacter à **willtelecom@gmail.com**.
                             </span>
                         </li>
                     </ul>

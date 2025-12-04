@@ -3,7 +3,7 @@
 export const FEATURED_PRODUCTS_COUNT = 8;
 
 export const HERO_CONTENT = {
-    badge: "Nouvelle Collection 2024",
+    badge: "Collection 2025",
     title: "Achetez avec",
     titleHighlight: "Confiance",
     subtitle: "Garantie et Service Local",
