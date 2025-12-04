@@ -26,7 +26,7 @@ const ProductDescription = ({ article }) => {
                     <p className="text-gray-300 leading-relaxed text-lg">
                         Le <span className="font-bold text-white">{article.modele}</span> redéfinit 
                         les standards de sa catégorie. Doté d'une mémoire vive exceptionnelle de{' '}
-                        <span className="font-bold text-indigo-300">{article.stockage} Go</span> et 
+                        <span className="font-bold text-indigo-300">{article.stokcage} Go</span> et 
                         d'un espace de stockage de{' '}
                         <span className="font-bold text-purple-300">{article.ram} Go</span>, 
                         il offre une fluidité sans précédent. Son design est un mélange parfait 
