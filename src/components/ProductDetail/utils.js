@@ -28,8 +28,8 @@ export const getProductSpecs = (article, marqueNom, categorieNom) => {
     return [
         { label: "Marque", value: marqueNom, color: "green" },
         { label: "Catégorie", value: categorieNom, color: "blue" },
-        { label: "RAM", value: `${article.ram || 'N/A'} Go`, color: "indigo" },
-        { label: "Stockage", value: `${article.stokcage || 'N/A'} Go`, color: "purple" },
+        { label: "RAM", value: `${article.stockage || 'N/A'} Go`, color: "indigo" },
+        { label: "Stockage", value: `${article.ram || 'N/A'} Go`, color: "purple" },
     ];
 };
 

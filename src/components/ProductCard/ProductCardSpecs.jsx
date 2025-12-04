@@ -16,7 +16,7 @@ const ProductCardSpecs = ({ ram, stockage }) => {
                 </div>
                 <div>
                     <p className="text-xs text-gray-500 font-medium">RAM</p>
-                    <p className="text-sm font-bold text-indigo-300">{ram} Go</p>
+                    <p className="text-sm font-bold text-indigo-300">{stockage} Go</p>
                 </div>
             </div>
             
@@ -33,7 +33,7 @@ const ProductCardSpecs = ({ ram, stockage }) => {
                 </div>
                 <div>
                     <p className="text-xs text-gray-500 font-medium">Stockage</p>
-                    <p className="text-sm font-bold text-purple-300">{stockage} Go</p>
+                    <p className="text-sm font-bold text-purple-300">{ram} Go</p>
                 </div>
             </div>
         </div>
