@@ -16,7 +16,7 @@ export const getImageThumbnails = (article) => {
  */
 export const getProductMetadata = (article) => {
     const marqueNom = article.marque?.nom_marque || 'N/A';
-    const categorieNom = article.category.nom|| 'N/A';
+    const categorieNom = article.categorie?.nom|| 'N/A';
     
     return { marqueNom, categorieNom };
 };
