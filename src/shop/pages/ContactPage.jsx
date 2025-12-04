@@ -9,8 +9,8 @@ const CONTACT_INFO = {
     // Le lien WhatsApp doit être au format : https://wa.me/numerodetelephone (avec le code pays, sans +, - ou espaces)
     whatsappLink: "https://wa.me/22672056229", // Exemple: "https://wa.me/33612345678"
     whatsappNumber: "+226 72 05 62 29",
-    tiktokLink: "https://www.tiktok.com/@kader_damiba6", // Exemple: "https://www.tiktok.com/@techstore_shop"
-    tiktokHandle: "@kader_damiba6"
+    tiktokLink: "https://www.tiktok.com/@kader.damiba6", // Exemple: "https://www.tiktok.com/@techstore_shop"
+    tiktokHandle: "@kader.damiba6"
 };
 
 // 🎨 Icônes SVG pour WhatsApp et TikTok
