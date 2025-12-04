@@ -56,7 +56,7 @@ const Header = () => {
                        hover:from-indigo-300 hover:via-purple-300 hover:to-pink-300
                        transition-all duration-500 relative group"
             >
-              WILL<span className="text-indigo-400">TELECOM</span>
+              WILL<span className="text-indigo-400">TELECOMKOUDOUGOU</span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r 
                              from-indigo-500 to-purple-500 group-hover:w-full 
                              transition-all duration-500"></span>
